@@ -729,27 +729,27 @@ Font Weights
 Displays 
 ----------------*/
 .display-1{
-    font-size: 5em;
+    font-size: 5rem;
     font-weight: 200;
     font-family: 'Poppins', sans-serif;
 }
 .display-2{
-    font-size: 4em;
+    font-size: 4rem;
     font-weight: 200;
     font-family: 'Poppins', sans-serif;
 }
 .display-3{
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: 200;
     font-family: 'Poppins', sans-serif;
 }
 .display-4{
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 200;
     font-family: 'Poppins', sans-serif;
 }
 .display-5{
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 200;
     font-family: 'Poppins', sans-serif;
 }
@@ -1148,11 +1148,11 @@ ROUNDNESS
     .container-xxl{
         width: var(--container-xs);
     }
+    .flex-md-col{
+        flex-direction: column !important ;
+    }
     
 }
-
-
-
 
 
 @media screen and (max-width:576px) {
@@ -1176,7 +1176,7 @@ ROUNDNESS
         width: var(--container-xs);
     }
     /* flex */
-    .d-flex{
-        flex-direction: column;
+    .flex-sm-col{
+        flex-direction: column !important ;
     }
 }
