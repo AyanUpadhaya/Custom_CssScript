@@ -219,87 +219,111 @@ Alignments
 /*---------
 Font Sizes
 ---------- */
+.fw-18{
+    /* 18px */
+    font: size 1.12rem; ;
+}
 .fs-20{
-    font-size: 20px;
+    /* 20px */
+    font-size: 1.25rem;
 }
 .fs-25{
-    font-size: 25px;
+    /* 25px */
+    font-size: 1.5rem;
 }
 .fs-30{
-    font-size: 30px;
+    /* 30px */
+    font-size: 1.8rem;
 }
 .fs-35{
-    font-size: 35px;
+    /* 35px */
+    font-size: 2.18rem;
 }
 .fs-40{
-    font-size: 40px;
+    /* 40px */
+    font-size: 2.5rem;
 }
 .fs-45{
-    font-size: 45px;
+    /* 45px */
+    font-size: 2.8rem;
 }
 .fs-50{
-    font-size: 50px;
+    /* 50px */
+    font-size: 3.12rem;
 }
 .fs-55{
-    font-size: 55px;
+    /* 55px */
+    font-size: 3.4rem;
 }
 .fs-60{
-    font-size: 60px;
+    /* 60px */
+    font-size: 4rem;
 }
 .fs-65{
-    font-size: 65px;
+    /* 65px */
+    font-size: 4.06rem;
 }
 .fs-70{
-    font-size: 70px;
+    /* 70px */
+    font: size 4.37rem ;
 }
 .fs-75{
-    font-size: 75px;
+    /* 75px */
+    font-size: 4.68rem
 }
 .fs-80{
-    font-size: 80px;
+    /* 80px */
+    font-size: 5rem;
 }
 .fs-85{
-    font-size: 85px;
+    /* 85px */
+    font-size: 5.3rem;
 }
 .fs-90{
-    font-size: 90px;
+    /* 90px */
+    font-size: 5.6rem;
 }
 .fs-95{
-    font-size: 95px;
+    /* 95px */
+    font-size: 5.93rem;
 }
 .fs-100{
-    font-size: 100px;
+    /* 100px */
+    font-size: 6.25rem;
 }
 
 /*--------------
 Font Weights
 ----------------*/
 .fw-bold{
-    font-weight: bold;
+    font-weight: bold !important;
 }
 .fw-bolder{
-    font-weight: bolder;
+    font-weight: bolder !important;
 }
 .fw-100{
-    font-weight: 100;
+    font-weight: 100 !important;
 }
 .fw-200{
-    font-weight: 200;
+    font-weight: 200 !important;
 }
 .fw-300{
-    font-weight: 300;
+    font-weight: 300 !important;
 }
 .fw-400{
-    font-weight: 400;
+    font-weight: 400 !important;
 }
 .fw-500{
-    font-weight: 500;
+    font-weight: 500 !important;
 }
 .fw-600{
-    font-weight: 600;
+    font-weight: 600 !important;
 }
 .fw-700{
-    font-weight: 700;
+    font-weight: 700 !important;
+}
+.fw-800{
+    font-weight: 800 !important;
 }
 
 
@@ -1108,7 +1132,9 @@ ROUNDNESS
 @media screen and (max-width:768px) {
     .container{
         width: var(--container-xs);
-        
+    }
+    .container-fluid{
+        width: var(--container-xs);
     }
     .container-lg{
         width: var(--container-xs);
@@ -1133,6 +1159,9 @@ ROUNDNESS
     .container{
         width: var(--container-xs);
         
+    }
+    .container-fluid{
+        width: var(--container-xs);
     }
     .container-lg{
         width: var(--container-xs);
