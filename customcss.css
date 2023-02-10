@@ -33,6 +33,16 @@ body{
     --light-color:#FBFBFB;
     --dark-color:#332D2D;
     --darkblue-color:#160333;
+    --cs-blue: #0d6efd;
+    --cs-indigo: #6610f2;
+    --cs-purple: #6f42c1;
+    --cs-pink: #d63384;
+    --cs-red: #dc3545;
+    --cs-orange: #fd7e14;
+    --cs-yellow: #ffc107;
+    --cs-green: #198754;
+    --cs-teal: #20c997;
+    --cs-cyan: #0dcaf0;
     /* spacing */
     /* ----padding------ */
     --padding-four-20:20px;
@@ -219,9 +229,9 @@ Alignments
 /*---------
 Font Sizes
 ---------- */
-.fw-18{
+.fs-18{
     /* 18px */
-    font: size 1.12rem; ;
+    font-size: 1.12rem ;
 }
 .fs-20{
     /* 20px */
@@ -328,7 +338,7 @@ Font Weights
 
 
 /*------ Background-colors/Colors-------*/
-
+/* color utilities */
 .color-primary{
     color:var(--primary-color);
 }
@@ -356,6 +366,44 @@ Font Weights
 .color-darkblue{
     color:var(--darkblue-color);
 }
+/* ------- */
+.color-white{
+    background-color: #ffff;
+}
+.color-blue{
+    color:var(--cs-blue);
+}
+.color-indigo{
+    color:var(--cs-indigo);
+}
+.color-purple{
+    color:var(--cs-purple);
+}
+.color-pink{
+    color:var(--cs-pink);
+}
+.color-red{
+    color:var(--cs-red);
+}
+.color-orange{
+    color:var(--cs-orange);
+}
+.color-yellow{
+    color:var(--cs-yellow);
+}
+.color-green{
+    color:var(--cs-green);
+}
+.color-teal{
+    color:var(--cs-teal);
+}
+.color-cyan{
+    color:var(--cs-cyan);
+}
+
+
+
+/* Background Utilities */
 .bg-primary{
     background: var(--primary-color);
 }
@@ -380,7 +428,39 @@ Font Weights
 .bg-darkblue{
     background-color: var(--darkblue-color);
 }
+.bg-blue{
+    background-color:var(--cs-blue);
+}
+.bg-indigo{
+    background-color:var(--cs-indigo);
+}
+.bg-purple{
+    background-color:var(--cs-purple);
+}
+.bg-pink{
+    background-color:var(--cs-pink);
+}
+.bg-red{
+    background-color:var(--cs-red);
+}
+.bg-orange{
+    background-color:var(--cs-orange);
+}
+.bg-yellow{
+    background-color:var(--cs-yellow);
+}
+.bg-green{
+    background-color:var(--cs-green);
+}
+.bg-teal{
+    background-color:var(--cs-teal);
+}
+.bg-cyan{
+    background-color:var(--cs-cyan);
+}
 
+
+/* -------------------- */
 .text-bg-primary{
     background: var(--primary-color);
     color:var(--light-color);
@@ -799,10 +879,10 @@ BUTTON COMPONENTS
 ----------------------*/
 /* button sizes */
 .btn{
-    padding:15px 40px;
+    padding:15px 30px;
     border: none;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 5px;
     font-weight: 500;
     font-size: 1.5rem;
 }
@@ -810,7 +890,7 @@ BUTTON COMPONENTS
     padding:10px 20px;
     border: none;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 5px;
     font-weight: 500;
     font-size: 1rem;
 }
@@ -818,7 +898,7 @@ BUTTON COMPONENTS
     padding:30px 50px;
     border: none;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 5px;
     font-weight: 600;
     font-size: 2rem;
 }
@@ -826,7 +906,7 @@ BUTTON COMPONENTS
     padding:40px 60px;
     border: none;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 5px;
     font-weight: 600;
     font-size: 3rem;
 }
@@ -887,16 +967,16 @@ FLEX LAYOUTS
 .d-flex{
     display: flex;
 }
-.flex-justify-center{
+.justify-center{
     justify-content: center;
 }
-.flex-justify-between{
+.justify-between{
     justify-content:space-between;
 }
-.flex-justify-around{
+.justify-around{
     justify-content:space-around;
 }
-.flex-justify-even{
+.justify-even{
     justify-content:space-evenly;
 }
 .flex-start{
@@ -911,13 +991,13 @@ FLEX LAYOUTS
 .flex-wrap-r{
     flex-wrap: wrap-reverse;
 }
-.flex-align-center{
+.align-center{
     align-items: center;
 }
-.flex-align-start{
+.align-start{
     align-items:flex-start;
 }
-.flex-align-end{
+.align-end{
     align-items:flex-end;
 }
 .flex-d-column{
@@ -1125,6 +1205,27 @@ ROUNDNESS
 /*--------OPACITY------ */
 .opacity-50{
     opacity: 0.5;
+}
+
+
+/* Form Section */
+.label{
+    display: block;
+    /* margin-bottom: 5px; */
+}
+.form-control{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+}
+.group-md{
+    width: 50%;
+}
+input:focus{
+
+    outline-style: solid;
+    outline-color: rgb(252, 246, 246);
 }
 
 /* ----MEDIA QUERIES---- */
